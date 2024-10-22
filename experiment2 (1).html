@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Generating Prime Numbers</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="#experiment2">Experiment 2</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+        <h1>Generating Prime Numbers Between 1 and 100</h1>
+    </header>
+
+    <section id="experiment2" class="experiment-detail">
+        <h2>Problem Statement</h2>
+        <p>Generate all prime numbers between 1 and 100 using a JavaScript function.</p>
+
+        <h2>Code Implementation</h2>
+        <pre>
+<code>
+function isPrime(num) {
+    if (num <= 1) return false;
+    for (let i = 2; i < num; i++) {
+        if (num % i === 0) return false;
+    }
+    return true;
+}
+
+function generatePrimes() {
+    let primes = [];
+    for (let i = 2; i <= 100; i++) {
+        if (isPrime(i)) {
+            primes.push(i);
+        }
+    }
+    return primes;
+}
+
+console.log(generatePrimes());
+</code>
+        </pre>
+
+        <h2>Result</h2>
+        <p>The function successfully generates a list of prime numbers between 1 and 100.</p>
+    </section>
+
+    <footer id="contact">
+        <h2>Contact Me</h2>
+        <form action="#" method="POST">
+            <input type="text" name="name" placeholder="Your Name" required>
+            <input type="email" name="email" placeholder="Your Email" required>
+            <textarea name="message" placeholder="Your Message" required></textarea>
+            <button type="submit">Send</button>
+        </form>
+        <p>&copy; 2024 Your Name</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

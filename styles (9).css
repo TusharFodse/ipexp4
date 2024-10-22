@@ -1,0 +1,192 @@
+    /* General Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #f5f5f5;
+    color: #333;
+}
+
+header {
+    background-color: #2c3e50;
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+header nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+}
+
+header nav ul li {
+    margin: 0 15px;
+}
+
+header nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 5px 10px;
+}
+
+header nav ul li a:hover {
+    background-color: #34495e;
+    border-radius: 5px;
+}
+
+.hero {
+    background: url('hero-bg.jpg') no-repeat center center/cover;
+    color: blue;
+    text-align: center;
+    padding: 100px 20px;
+}
+
+.hero h2 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+}
+
+.hero p {
+    font-size: 1.2em;
+}
+
+.experiments-preview {
+    padding: 50px 20px;
+    background-color: #ecf0f1;
+}
+
+.experiments-preview h2 {
+    text-align: center;
+    font-size: 2em;
+    margin-bottom: 40px;
+}
+
+.experiment-item {
+    background-color: white;
+    border: 1px solid #bdc3c7;
+    border-radius: 5px;
+    padding: 20px;
+    margin: 20px auto;
+    max-width: 600px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.experiment-item h3 {
+    margin-bottom: 15px;
+}
+
+.experiment-item p {
+    margin-bottom: 10px;
+}
+
+.experiment-item a {
+    text-decoration: none;
+    color: #2980b9;
+    font-weight: bold;
+}
+
+.experiment-item a:hover {
+    text-decoration: underline;
+}
+
+.experiment-detail {
+    padding: 50px 20px;
+    background-color: white;
+}
+
+.experiment-detail h2 {
+    font-size: 1.8em;
+    margin-bottom: 20px;
+}
+
+.experiment-detail pre {
+    background-color: #ecf0f1;
+    padding: 20px;
+    border-radius: 5px;
+    overflow-x: auto;
+    font-size: 1em;
+    line-height: 1.5;
+}
+
+footer {
+    background-color: #2c3e50;
+    color: white;
+    text-align: center;
+    padding: 30px 20px;
+    margin-top: 50px;
+}
+
+footer h2 {
+    margin-bottom: 20px;
+}
+
+footer form {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+footer input, footer textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #bdc3c7;
+    border-radius: 5px;
+    font-size: 1em;
+}
+
+footer button {
+    background-color: #2980b9;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1em;
+}
+
+footer button:hover {
+    background-color: #3498db;
+}
+
+footer p {
+    margin-top: 20px;
+    font-size: 0.9em;
+}
+
+@media (max-width: 768px) {
+    header nav ul {
+        flex-direction: column;
+    }
+
+    header nav ul li {
+        margin: 10px 0;
+    }
+
+    .hero h2 {
+        font-size: 2em;
+    }
+
+    .hero p {
+        font-size: 1em;
+    }
+
+    .experiments-preview h2 {
+        font-size: 1.8em;
+    }
+
+    .experiment-detail h2 {
+        font-size: 1.6em;
+    }
+
+    footer h2 {
+        font-size: 1.6em;
+    }
+}

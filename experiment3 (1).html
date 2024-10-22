@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Studying Functions in JavaScript</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="#experiment3">Experiment 3</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+        <h1>Studying Functions in JavaScript</h1>
+    </header>
+
+    <section id="experiment3" class="experiment-detail">
+        <h2>Problem Statement</h2>
+        <p>Explore functions as objects, arrow functions, inner functions, and anonymous functions in JavaScript.</p>
+
+        <h2>Code Implementation</h2>
+        <pre>
+<code>
+// Function as Object
+function greet() {
+    console.log("Hello, World!");
+}
+greet.language = "English";
+console.log(greet.language); // Outputs: English
+
+// Arrow Function
+const sum = (a, b) => a + b;
+console.log(sum(5, 3)); // Outputs: 8
+
+// Inner Function
+function outer() {
+    function inner() {
+        console.log("Inner function");
+    }
+    inner();
+}
+outer(); // Outputs: Inner function
+
+// Anonymous Function
+setTimeout(function() {
+    console.log("This is an anonymous function");
+}, 1000);
+</code>
+        </pre>
+
+        <h2>Result</h2>
+        <p>This experiment demonstrates various types of functions in JavaScript, showcasing their versatility and applications.</p>
+    </section>
+
+    <footer id="contact">
+        <h2>Contact Me</h2>
+        <form action="#" method="POST">
+            <input type="text" name="name" placeholder="Your Name" required>
+            <input type="email" name="email" placeholder="Your Email" required>
+            <textarea name="message" placeholder="Your Message" required></textarea>
+            <button type="submit">Send</button>
+        </form>
+        <p>&copy; 2024 Your Name</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
